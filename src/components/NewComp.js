@@ -19,7 +19,7 @@ const NewComp = () => {
         setSub("Subscribed");
       } else {
         setMessage("Subscribe to react-Myapp");
-        setSub("Subscribe");
+        setSub("Unsubscribe");
       }
     };
     
