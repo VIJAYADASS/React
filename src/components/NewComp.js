@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import BellAImage from "./BellA-PNG.png";
 import BellBImage  from "./BellB.png";
+import BellCImage from "./BellC.png";
  
 
 const NewComp = () => {
     const [message, setMessage] = useState("Subscribe to react-Myapp");
     const [sub, setSub] = useState("Subscribe");
     const [imageURL, setImageURL] = useState(BellAImage);
+     
   
     const styles = {
       fontStyle: "bold",
@@ -15,11 +17,16 @@ const NewComp = () => {
 
     const buttonChange = () => {
       if (sub === "Subscribe") {
-        setMessage("Click the Bell icon and get the Notification");
+        setMessage(" Click the Bell icon and get the Notifications");
         setSub("Unsubscribe");
+         
+         
       } else {
         setMessage("Subscribe to react-Myapp");
         setSub("Subscribe");
+        setImageURL(BellCImage);
+         
+         
       }
     };
     
@@ -27,12 +34,15 @@ const NewComp = () => {
       if (imageURL === BellAImage) {
         setImageURL(BellBImage);
         setMessage("Thank you! You will receive updates for all new videos and live streams.");
+         
       } else {
         setImageURL(BellAImage);
-        setMessage("Click the Bell icon and get the Notification");
+        setMessage("Thanks for Subscribing, And Moreover Click the Bell icon and get the Notification");
+         
       } 
     };
 
+     
     return (
       <div className="App">
       <h2 style={styles}>{message}</h2>
@@ -41,7 +51,7 @@ const NewComp = () => {
       </b>
       <p>
         <img className="bell-icon" src={imageURL} onClick={imageChange} alt="" />
-      </p>
+        </p>
     </div>
     );
 };
