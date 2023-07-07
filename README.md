@@ -7,5 +7,7 @@
  Then you can click the bell icon update the all notification 
 
  If else using the conditions
- Subscribed and unsubscribe & aslo the bell icon is turn on and off Notification
+ Subscribed and unsubscribe & aslo the bell icon is turn on and off Notification.
+
+ update the  more information using the button and bell icons
  
