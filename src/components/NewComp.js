@@ -16,7 +16,7 @@ const NewComp = () => {
     const buttonChange = () => {
       if (sub === "Subscribe") {
         setMessage("Click the Bell icon and get the Notification");
-        setSub("Unsubscribed");
+        setSub("Unsubscribe");
       } else {
         setMessage("Subscribe to react-Myapp");
         setSub("Subscribe");
