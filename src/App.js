@@ -18,7 +18,9 @@ const App = () => {
     <div className="App" style={styles}>
       <div className='.App' style={styles}></div>
       <h1>Welcome</h1>
-      <NewComp /> 
+       <NewComp />  
+       
+     
     </div>
   );
 };
